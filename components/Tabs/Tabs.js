@@ -55,8 +55,9 @@ class TabItem {
 		this.element = element;
 	}
 	deselect() {
+		TweenMax.to('.tabs-item-selected', 2, { y: 2000 });
 		const element = document.querySelector(`.tabs-item-selected`);
-		element.classList.remove('tabs-item-selected');
+		setTimeout(element.classList.remove('tabs-item-selected'), 2000);
 	}
 	select() {
 		// Select all ".tabs-item" elements from the DOM
@@ -67,6 +68,7 @@ class TabItem {
 		// Add a class named "tabs-item-selected" to this element
 		//this.element;
 		this.element.classList.add('tabs-item-selected');
+		TweenMax.to('.tabs-item-selected', 2, { y: 0 });
 	}
 }
 
@@ -82,6 +84,6 @@ class TabItem {
 
 const links = document.querySelectorAll('.tabs-link');
 
-links.forEach(tabs => {
+links.forEach((tabs, i) => {
 	return new Tabs(tabs);
 });

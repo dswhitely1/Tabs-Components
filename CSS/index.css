@@ -83,7 +83,6 @@
   background-color: #be2530;
 }
 .tabs .tabs-link-selected {
-  z-index: 2;
   border-right: 1px solid #931d25;
   background-color: #ffffff;
   color: black;
