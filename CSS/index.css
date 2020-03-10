@@ -28,6 +28,7 @@
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #931d25;
+  left: -183px;
 }
 .dropdown .dropdown-link {
   width: 100%;
@@ -42,7 +43,7 @@
   background-color: #931d25;
 }
 .dropdown .dropdown-hidden {
-  display: none;
+  display: hidden;
 }
 .tabs {
   width: 100%;
@@ -82,7 +83,6 @@
   background-color: #be2530;
 }
 .tabs .tabs-link-selected {
-  z-index: 2;
   border-right: 1px solid #931d25;
   background-color: #ffffff;
   color: black;
